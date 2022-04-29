@@ -1,6 +1,6 @@
 a = int(input())
 
-if -30 < a <= -2 or 7 < a <= 25:
-    print('Принадлежит')
+if a % 7 == 0 or a % 17 == 0:
+    print('YES')
 else:
-    print('Не принадлежит')
+    print('NO')
