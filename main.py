@@ -3,7 +3,7 @@ b = int(input())
 c = int(input())
 d = int(input())
 
-if a == c or b == d:
+if  -1 <= a - c <= 1 and -1 <= b - d <= 1:
     print('YES')
 else:
     print('NO')
