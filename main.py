@@ -1,6 +1,9 @@
 a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
 
-if a % 100 != 0 and a % 4 == 0 or a % 400 == 0:
+if a == c or b == d:
     print('YES')
 else:
     print('NO')
