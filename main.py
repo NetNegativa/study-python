@@ -1,6 +1,8 @@
 a = int(input())
+b = int(input())
+c = int(input())
 
-if 1000 <= a <= 9999 and (a % 7 == 0 or a % 17 == 0):
+if a < b + c and b < a + c and c < a + b:
     print('YES')
 else:
     print('NO')
