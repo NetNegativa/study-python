@@ -1,9 +1,9 @@
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
+n = int(input())
+k = int(input())
 
-if  -1 <= a - c <= 1 and -1 <= b - d <= 1:
+if k > n:
     print('YES')
-else:
+elif n > k:
     print('NO')
+else:
+    print("Don't know")
