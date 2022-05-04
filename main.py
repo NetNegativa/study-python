@@ -1,8 +1,8 @@
 a = int(input())
 
-if a == 2:
-    print(28)
-elif a == 4 or a == 6 or a == 9 or a == 11:
-    print(30)
+if a < 60:
+    print('Легкий вес')
+elif 60 <= a < 64:
+    print('Первый полусредний вес')
 else:
-    print(31)
+    print('Полусредний вес')
