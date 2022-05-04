@@ -1,10 +1,8 @@
 a = int(input())
-b = int(input())
-c = int(input())
 
-if c < a < b or b < a < c:
-    print(a)
-elif c < b < a or a < b < c:
-    print(b)
+if a == 2:
+    print(28)
+elif a == 4 or a == 6 or a == 9 or a == 11:
+    print(30)
 else:
-    print(c)
+    print(31)
