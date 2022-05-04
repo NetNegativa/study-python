@@ -1,26 +1,21 @@
-a = int(input())
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
 
-if a == 0:
-    print('зеленый')
-elif 1 <= a <= 10:
-    if a % 2 == 0:
-        print('черный')
-    else:
-        print('красный')
-elif 11 <= a <= 18:
-    if a % 2 == 0:
-        print('красный')
-    else:
-        print('черный')
-elif 19 <= a <= 28:
-    if a % 2 == 0:
-        print('черный')
-    else:
-        print('красный')
-elif 29 <= a <= 36:
-    if a % 2 == 0:
-        print('красный')
-    else:
-        print('черный')
+if b1 == a2:
+    print(b1)
+elif a1 == b2:
+    print(a1)
+elif a1 <= a2 < b1 < b2:
+    print(a2, b1)
+elif a2 <= a1 < b2 < b1:
+    print(a1, b2)
+elif a1 < a2 < b2 <= b1:
+    print(a2, b2)
+elif a2 < a1 < b1 <= b2:
+    print(a1, b1)
+elif a1 == a2 and b1 == b2:
+    print(a1, b1)
 else:
-    print('ошибка ввода')
+    print('пустое множество')
