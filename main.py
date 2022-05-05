@@ -1,17 +1,8 @@
-from math import sqrt
+a = len(input())
+b = len(input())
+c = len(input())
 
-a = float(input())
-b = float(input())
-c = float(input())
-
-d = b ** 2 - 4 * a * c
-if d > 0:
-    x1 = ((-b + sqrt(d)) / (2 * a))
-    x2 = ((-b - sqrt(d)) / (2 * a))
-    print(min(x1, x2))
-    print(max(x1, x2))
-elif d == 0:
-    x = (-b / (2 * a))
-    print(x)
+if (2 * a - b - c) * (2 * b - c - a) * (2 * c - b - a) == 0:
+    print('YES')
 else:
-    print('Нет корней')
+    print('NO')
