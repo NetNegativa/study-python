@@ -1,8 +1,7 @@
-a = len(input())
-b = len(input())
-c = len(input())
+n = int(input())
+b = 0
 
-if (2 * a - b - c) * (2 * b - c - a) * (2 * c - b - a) == 0:
-    print('YES')
-else:
-    print('NO')
+for i in range(1, n + 1):
+    if n % i == 0:
+        b += i
+print(b)
