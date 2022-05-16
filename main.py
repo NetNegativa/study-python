@@ -1,7 +1,10 @@
 num = int(input())
 
-for i in range(1, num + 1):
-    for j in range(1, 10):
-        print(i,'+', j, '=', i + j, end=' ')
-        print()
+for i in range(num // 2 + 1):
+    for j in range(i):
+        print('*', end='')
+    print()
+for k in range(num // 2 + 1, 0, -1):
+    for m in range(k):
+        print('*', end='')
     print()
