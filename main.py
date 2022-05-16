@@ -1,7 +1,7 @@
-a = int(input())
-f1 = 0
-f2 = 1
+num = int(input())
 
-for i in range(a):
-    f1, f2 = f2, f1 + f2
-    print(f1, end=' ')
+for i in range(1, num + 1):
+    for j in range(1, 10):
+        print(i,'+', j, '=', i + j, end=' ')
+        print()
+    print()
