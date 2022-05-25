@@ -1,10 +1,11 @@
-num = int(input())
+firstNum = int(input())
+secondNum = int(input())
+checkSum = 0
 
-while num > 9:
-    sum = 0
-    while num != 0:
-        sum += num % 10
-        num = num // 10
-    num = sum
-
-print(num)
+for i in range(firstNum, secondNum + 1):
+    for j in range(1, i + 1):
+        if i % j == 0:
+            checkSum += 1
+    if checkSum == 2:
+        print(i)
+    checkSum = 0
