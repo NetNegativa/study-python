@@ -1,11 +1,8 @@
-firstNum = int(input())
-secondNum = int(input())
-checkSum = 0
+n = int(input())
+s = input()
 
-for i in range(firstNum, secondNum + 1):
-    for j in range(1, i + 1):
-        if i % j == 0:
-            checkSum += 1
-    if checkSum == 2:
-        print(i)
-    checkSum = 0
+for i in range(len(s)):
+    d = ord(s[i]) - n
+    if d < 97:
+        d += 26
+    print(chr(d), end='')
