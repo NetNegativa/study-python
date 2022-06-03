@@ -1,8 +1,6 @@
 n = int(input())
-s = input()
+l = []
 
-for i in range(len(s)):
-    d = ord(s[i]) - n
-    if d < 97:
-        d += 26
-    print(chr(d), end='')
+for i in range(1, n + 1):
+    l += chr(96 + i)
+print(l)
