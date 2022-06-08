@@ -1,12 +1,15 @@
 n = int(input())
-l = []
+numbersList = []
+searchList = []
 
 for i in range(n):
-    s = input()
-    l.append(s)
+    number = input()
+    numbersList.append(number)
 
-k = int(input())
+search = input()
 
-for i in range(len(l)):
-    s = l[i]
-    print(s[k - 1:k], end='')
+for j in range(len(numbersList)):
+    if search.lower() in numbersList[j].lower():
+        searchList.append(numbersList[j])
+
+print(*searchList, sep='\n')
